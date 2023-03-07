@@ -215,14 +215,36 @@ export const MainPage = styled.main`
     padding: 0;
     min-height: 80em;
 
-    justify-content: flex-start;
-    align-items: flex-start;
     .container {
       height: 100%;
       gap: 0;
       margin: 0;
       padding: 0;
       flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .informations {
+      margin-top: 2em;
+    }
+
+    .elements {
+      .svgElements {
+      }
+    }
+  }
+
+  @media screen and (max-height: 1000px) {
+    height: 60em;
+    padding: 4em;
+
+    justify-content: flex-start;
+    align-items: flex-start;
+    .container {
+      gap: 0;
+      margin: 0;
+      padding: 0;
       align-items: center;
       justify-content: center;
     }

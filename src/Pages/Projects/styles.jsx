@@ -3,7 +3,7 @@ import styled from 'styled-components';
 // eslint-disable-next-line import/prefer-default-export
 export const ProjectsPage = styled.main`
   background-color: #121214;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   color: #fff;
   font-family: 'Work Sans', sans-serif;
@@ -132,5 +132,9 @@ export const ProjectsPage = styled.main`
         width: 80%;
       }
     }
+  }
+
+  @media screen and (max-height: 1000px) {
+    height: 60em;
   }
 `;
