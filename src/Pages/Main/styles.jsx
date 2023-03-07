@@ -210,10 +210,10 @@ export const MainPage = styled.main`
     }
   }
 
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 600px) {
     margin: 0;
     padding: 0;
-    min-height: 70em;
+    min-height: 80em;
 
     justify-content: flex-start;
     align-items: flex-start;
