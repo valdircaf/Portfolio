@@ -123,7 +123,7 @@ export const ProjectsPage = styled.main`
   }
 
   @media screen and (max-width: 450px) {
-    height: 50em;
+    height: 60em;
     font-size: 1em;
 
     section {
