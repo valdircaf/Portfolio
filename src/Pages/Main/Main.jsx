@@ -28,7 +28,7 @@ export default function Main() {
             </h1>
             <BrowserRouter>
               <NavLink
-                to="https://drive.google.com/file/d/1vstGWL7WPNYQmz5_qI5PH0XxwZnakVfD/view?usp=sharing"
+                to="https://drive.google.com/file/d/1PBAn-oAs0J0BhGrArFsn2FuiK5nvx_0i/view?usp=sharing"
                 target="_blank"
               >
                 <Button value="Baixar CV" svg={<FiDownload />} />

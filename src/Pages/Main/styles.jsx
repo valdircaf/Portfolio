@@ -110,6 +110,7 @@ export const MainPage = styled.main`
       justify-content: center;
       gap: 0.5em;
       cursor: pointer;
+
       &:hover {
         transform: scale(0.9);
         transition: all 0.2s;
@@ -213,7 +214,7 @@ export const MainPage = styled.main`
   @media screen and (max-width: 600px) {
     margin: 0;
     padding: 0;
-    min-height: 80em;
+    min-height: 110em;
 
     .container {
       height: 100%;
