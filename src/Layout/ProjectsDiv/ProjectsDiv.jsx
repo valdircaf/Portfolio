@@ -1,16 +1,19 @@
 import React from 'react';
-import { FaLinkedin } from 'react-icons/fa';
 import { ProjectsDivContainer } from './styles';
-import weatherAppImg from '../../Images/weatherApp.png';
 
-export default function ProjectsDiv() {
+// eslint-disable-next-line react/prop-types
+export default function ProjectsDiv({ h1, svg, svg2, svg3, img, alt }) {
   return (
     <ProjectsDivContainer>
       <section>
-        <h1>Teste</h1>
-        <FaLinkedin />
+        <h1>{h1}</h1>
+        <div>
+          <p>{svg}</p>
+          <p>{svg2}</p>
+          <p>{svg3}</p>
+        </div>
       </section>
-      <img src={weatherAppImg} alt="teste" />
+      <img src={img} alt={alt} />
     </ProjectsDivContainer>
   );
 }

@@ -7,31 +7,37 @@ export const ProjectsDivContainer = styled.div`
   border-bottom: 3px solid #8257e6;
   cursor: pointer;
   position: relative;
-  section {
+  &::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
     position: absolute;
-    top: 2em;
-    left: 4em;
+  }
+  section {
     text-align: center;
     h1 {
+      position: absolute;
+      top: 30%;
       font-size: 1.5em;
       color: #fff;
       margin-bottom: 0.5em;
     }
-    svg {
-      font-size: 1.5em;
-      color: #8257e6;
+    div {
+      position: absolute;
+      top: 60%;
+      display: flex;
+      gap: 1em;
+      p {
+        svg {
+          color: #8257e6;
+          font-size: 1.5em;
+        }
+      }
     }
   }
   img {
     width: 100%;
     height: 100%;
-    &::before {
-      content: '';
-      display: block;
-      background-color: rgba(0, 0, 0, 0.5);
-      width: 100%;
-      height: 100%;
-      z-index: 5;
-    }
   }
 `;
