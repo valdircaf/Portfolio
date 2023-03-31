@@ -4,7 +4,7 @@ import { AiFillGithub } from 'react-icons/ai';
 import { FaLinkedin } from 'react-icons/fa';
 import { useInView } from 'react-intersection-observer';
 import { HeaderContainer } from './styles';
-import PhotoPerfil from '../../Images/Perfil.jpg';
+import PhotoPerfil from '../../Images/Perfil.png';
 import ButtonCV from '../../Layout/Button CV/ButtonCV';
 
 export default function Header() {
