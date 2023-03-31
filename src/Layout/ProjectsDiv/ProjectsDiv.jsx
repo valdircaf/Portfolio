@@ -1,8 +1,9 @@
 import React from 'react';
 import { ProjectsDivContainer } from './styles';
+import CuteButton from '../CuteButton/CuteButton';
 
 // eslint-disable-next-line react/prop-types
-export default function ProjectsDiv({ h1, svg, svg2, svg3, img, alt }) {
+export default function ProjectsDiv({ h1, svg, svg2, svg3, img, alt, date }) {
   return (
     <ProjectsDivContainer>
       <section>
@@ -14,6 +15,10 @@ export default function ProjectsDiv({ h1, svg, svg2, svg3, img, alt }) {
         </div>
       </section>
       <img src={img} alt={alt} />
+      <div className="infoAfter">
+        <p>{date}</p>
+        <CuteButton text="Ver Mais" />
+      </div>
     </ProjectsDivContainer>
   );
 }

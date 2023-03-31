@@ -6,6 +6,8 @@ export const ButtonCVModule = styled.button`
   width: 9em;
   height: 2em;
   background-image: linear-gradient(to right, #8257e6, #5703de);
+  border-radius: 2em;
+  border: none;
   color: #fff;
   cursor: pointer;
   align-items: center;
@@ -15,7 +17,9 @@ export const ButtonCVModule = styled.button`
     font-size: 1.5em;
   }
   &:hover {
-    transform: scale(0.9);
-    transition: all 0.2s;
+    transform: scale(1.1);
+    transition: all 0.1s;
+    background-color: 8257e6;
+    font-weight: 500;
   }
 `;

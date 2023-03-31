@@ -1,25 +1,49 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
 import { RiCloseFill } from 'react-icons/ri';
-import { useInView } from 'react-intersection-observer';
 import { GridContainer } from './styles';
 import Button from '../Button CV/ButtonCV';
 
 // eslint-disable-next-line react/prop-types
-export default function Grid({ h1, p, video, active, link, link2 }) {
-  const { ref, inView } = useInView();
+export default function Grid({
+  // eslint-disable-next-line react/prop-types
+  h1,
+  // eslint-disable-next-line react/prop-types
+  p,
+  // eslint-disable-next-line react/prop-types
+  video,
+  // eslint-disable-next-line react/prop-types
+  active,
+  // eslint-disable-next-line react/prop-types
+  link,
+  // eslint-disable-next-line react/prop-types
+  link2,
+  // eslint-disable-next-line react/prop-types
+  p2,
+  // eslint-disable-next-line react/prop-types
+  p3,
+  // eslint-disable-next-line react/prop-types
+  p4,
+  // eslint-disable-next-line react/prop-types
+  link3,
+}) {
   return (
     <GridContainer>
-      <section className={active ? 'show' : 'hide'} ref={ref}>
-        <section className={inView ? 'animation' : ''}>
+      <section className={active ? 'show' : 'hide'}>
+        <section>
           <p className="svg">
             <RiCloseFill onClick={!active} />
           </p>
 
           <section className="texts">
             <h1>{h1}</h1>
+            <div className="bar" />
             <p>{p}</p>
+            <p>{p2}</p>
+            <p>{p3}</p>
+            <p>{p4}</p>
           </section>
+
           <section className="video">
             <video controls autoPlay>
               <source src={video} type="video/mp4" />
@@ -30,8 +54,12 @@ export default function Grid({ h1, p, video, active, link, link2 }) {
                 label="english_captions"
               />
             </video>
-            <Button text="Ver no Github" link={link} />
-            <Button text="Ver no LinkedIn" link={link2} />
+
+            <div className="buttons">
+              <Button text="Ver no Github" link={link} />
+              <Button text="Ver no LinkedIn" link={link2} />
+              <Button text="Ver Site" link={link3} />
+            </div>
           </section>
         </section>
       </section>
