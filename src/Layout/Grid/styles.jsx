@@ -117,4 +117,13 @@ export const GridContainer = styled.section`
       }
     }
   }
+  @media screen and (max-width: 500px) {
+    .show {
+      width: 100%;
+      left: 0;
+      .buttons {
+        margin: 1em 0;
+      }
+    }
+  }
 `;

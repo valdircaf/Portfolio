@@ -24,8 +24,7 @@ export const ButtonCVModule = styled.button`
   }
   @media screen and (max-width: 500px) {
     a {
-      font-size: 0.85em;
+      font-size: 0.8em;
     }
-    width: 10em;
   }
 `;

@@ -69,6 +69,7 @@ export const NavbarContainer = styled.nav`
     align-items: center;
     flex-direction: column;
     gap: 5em;
+    z-index: 1000;
     @keyframes menuOpen {
       from {
         width: 0;
