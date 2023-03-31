@@ -71,10 +71,10 @@ export const NavbarContainer = styled.nav`
     gap: 5em;
     @keyframes menuOpen {
       from {
-        background-color: transparent;
+        width: 0;
       }
       to {
-        background-color: rgba(0, 0, 0, 1);
+        width: 100%;
       }
     }
     animation: menuOpen 0.5s;

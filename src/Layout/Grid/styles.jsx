@@ -3,7 +3,7 @@ import styled from 'styled-components';
 // eslint-disable-next-line import/prefer-default-export
 export const GridContainer = styled.section`
   .show {
-    min-height: 60vh;
+    max-height: 100vh;
     background-color: #13131f;
     z-index: 20;
     position: fixed;
@@ -63,6 +63,8 @@ export const GridContainer = styled.section`
       display: flex;
       gap: 1em;
       margin-bottom: 2em;
+      width: 100%;
+      justify-content: center;
     }
   }
   .hide {
@@ -73,12 +75,63 @@ export const GridContainer = styled.section`
     .show {
       width: 50%;
       left: 30%;
-      min-height: 50vh;
+      max-height: 100vh;
       .video {
         display: flex;
         flex-direction: column;
         video {
           width: 40%;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 1500px) {
+    .show {
+      width: 50%;
+      left: 30%;
+      max-height: 100vh;
+      .video {
+        display: flex;
+        flex-direction: column;
+        video {
+          width: 40%;
+        }
+      }
+    }
+  }
+  @media screen and (max-height: 700px) {
+    .show {
+      max-height: 100vh;
+      .video {
+        display: flex;
+        flex-direction: column;
+
+        video {
+          width: 38%;
+        }
+      }
+      .buttons {
+        margin-bottom: 1em;
+      }
+      .texts {
+        .bar {
+          margin: 0;
+        }
+      }
+    }
+  }
+  @media screen and (max-height: 600px) {
+    .show {
+      max-height: 100vh;
+      .video {
+        display: flex;
+        video {
+          width: 38%;
+        }
+      }
+      .texts {
+        .bar {
+          margin: 0;
         }
       }
     }
