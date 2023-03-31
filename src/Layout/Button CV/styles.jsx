@@ -22,4 +22,10 @@ export const ButtonCVModule = styled.button`
     background-color: 8257e6;
     font-weight: 500;
   }
+  @media screen and (max-width: 500px) {
+    a {
+      font-size: 0.85em;
+    }
+    width: 10em;
+  }
 `;

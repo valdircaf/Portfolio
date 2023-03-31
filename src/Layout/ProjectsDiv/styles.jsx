@@ -23,7 +23,9 @@ export const ProjectsDivContainer = styled.div`
     position: absolute;
   }
   section {
-    text-align: center;
+    background-color: red;
+    display: flex;
+    justify-content: center;
 
     h1 {
       position: absolute;

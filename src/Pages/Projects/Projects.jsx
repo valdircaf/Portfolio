@@ -37,6 +37,11 @@ export default function Projects() {
     setIsActiveCircle(!isActiveCircle);
   };
 
+  const hideScrollBar = () => {
+    document.documentElement.style.overflow = 'hidden';
+    document.body.scroll = 'no';
+  };
+
   return (
     <ProjectsContainer>
       <h1 className={inView ? 'show' : 'hide'} id="projects">
@@ -45,7 +50,10 @@ export default function Projects() {
       <div className={inView ? 'bar' : 'hide'} />
       <section className={inView ? 'show' : 'hide'}>
         <div
-          onClick={setActiveDaily}
+          onClick={() => {
+            setActiveDaily();
+            hideScrollBar();
+          }}
           onKeyDown={setActiveDaily}
           role="presentation"
         >
@@ -56,9 +64,6 @@ export default function Projects() {
             svg3={<SiStyledcomponents />}
             img={WeatherAppImg}
             alt="Foto do app Daily Weather App"
-            onClick={() => {
-              setActiveDaily();
-            }}
             date="19 de Fevereiro de 2023"
           />
           <Grid
@@ -74,7 +79,10 @@ export default function Projects() {
           />
         </div>
         <div
-          onClick={setActivePass}
+          onClick={() => {
+            setActivePass();
+            hideScrollBar();
+          }}
           onKeyDown={setActivePass}
           role="presentation"
           ref={ref}
@@ -96,13 +104,16 @@ export default function Projects() {
             link="https://github.com/valdircaf/geradorDeSenha"
             link2="https://www.linkedin.com/posts/valdir-castro10_react-javascript-desenvolvimento-activity-7046974709619433472-htEG?utm_source=share&utm_medium=member_desktop"
             link3="https://passgeneratorportfolio.netlify.app/"
-            p2="- Vi esta ideia de projeto em um dos cursos que fazia na época e criei o meu próprio com a ajuda de um amigo designer. Achei um projeto bem legal para praticar a lógica."
+            p2="- Vi esta ideia de projeto em um dos cursos que fazia na época e criei o meu próprio. Achei um projeto bem legal para praticar a lógica."
             p3="- Este projeto foi desenvolvido com as seguintes tecnologias: "
             p4="&#8226; React &#8226; CSS &#8226; Javascript"
           />
         </div>
         <div
-          onClick={setActiveFood}
+          onClick={() => {
+            setActiveFood();
+            hideScrollBar();
+          }}
           onKeyDown={setActiveFood}
           role="presentation"
         >
@@ -127,7 +138,10 @@ export default function Projects() {
           />
         </div>
         <div
-          onClick={setActiveCircle}
+          onClick={() => {
+            setActiveCircle();
+            hideScrollBar();
+          }}
           onKeyDown={setActiveCircle}
           role="presentation"
         >

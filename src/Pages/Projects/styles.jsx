@@ -40,7 +40,7 @@ export const ProjectsContainer = styled.section`
     margin: 0.5em 2em 7em 0;
     animation: view 1s;
   }
-  section {
+  > section {
     width: 100%;
     gap: 2em;
     display: flex;

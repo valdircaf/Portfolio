@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import React from 'react';
+import React, { useState } from 'react';
 import { RiCloseFill } from 'react-icons/ri';
 import { GridContainer } from './styles';
 import Button from '../Button CV/ButtonCV';
@@ -27,12 +27,21 @@ export default function Grid({
   // eslint-disable-next-line react/prop-types
   link3,
 }) {
+  const showScrollBar = () => {
+    document.documentElement.style.overflow = 'scroll';
+  };
+  const [isActive, setIsActive] = useState(active);
   return (
     <GridContainer>
       <section className={active ? 'show' : 'hide'}>
         <section>
           <p className="svg">
-            <RiCloseFill onClick={!active} />
+            <RiCloseFill
+              onClick={() => {
+                setIsActive(!isActive);
+                showScrollBar();
+              }}
+            />
           </p>
 
           <section className="texts">
