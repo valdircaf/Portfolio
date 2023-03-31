@@ -27,9 +27,6 @@ export default function Grid({
   // eslint-disable-next-line react/prop-types
   link3,
 }) {
-  const showScrollBar = () => {
-    document.documentElement.style.overflow = 'scroll';
-  };
   const [isActive, setIsActive] = useState(active);
   return (
     <GridContainer>
@@ -39,7 +36,6 @@ export default function Grid({
             <RiCloseFill
               onClick={() => {
                 setIsActive(!isActive);
-                showScrollBar();
               }}
             />
           </p>

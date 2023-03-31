@@ -37,11 +37,6 @@ export default function Projects() {
     setIsActiveCircle(!isActiveCircle);
   };
 
-  const hideScrollBar = () => {
-    document.documentElement.style.overflow = 'hidden';
-    document.body.scroll = 'no';
-  };
-
   return (
     <ProjectsContainer>
       <h1 className={inView ? 'show' : 'hide'} id="projects">
@@ -52,7 +47,6 @@ export default function Projects() {
         <div
           onClick={() => {
             setActiveDaily();
-            hideScrollBar();
           }}
           onKeyDown={setActiveDaily}
           role="presentation"
@@ -81,7 +75,6 @@ export default function Projects() {
         <div
           onClick={() => {
             setActivePass();
-            hideScrollBar();
           }}
           onKeyDown={setActivePass}
           role="presentation"
@@ -112,7 +105,6 @@ export default function Projects() {
         <div
           onClick={() => {
             setActiveFood();
-            hideScrollBar();
           }}
           onKeyDown={setActiveFood}
           role="presentation"
@@ -140,7 +132,6 @@ export default function Projects() {
         <div
           onClick={() => {
             setActiveCircle();
-            hideScrollBar();
           }}
           onKeyDown={setActiveCircle}
           role="presentation"
