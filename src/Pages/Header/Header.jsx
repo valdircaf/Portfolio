@@ -31,7 +31,7 @@ export default function Header() {
         <ButtonCV
           type="button"
           text="Download CV"
-          link="https://drive.google.com/file/d/1PBAn-oAs0J0BhGrArFsn2FuiK5nvx_0i/view?usp=sharing"
+          link="https://drive.google.com/file/d/17vUivovXDy9TbiJyXH7K2QVfv6exqUS-/view"
         />
       </section>
 
