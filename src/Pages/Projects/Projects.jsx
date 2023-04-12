@@ -7,7 +7,7 @@ import { ProjectsContainer } from './styles';
 import ProjectsDiv from '../../Layout/ProjectsDiv/ProjectsDiv';
 import Grid from '../../Layout/Grid/Grid';
 import WeatherAppImg from '../../Images/weatherApp.png';
-import WeatherAppVideo from '../../Videos/WeatherApp.mp4';
+import WeatherAppVideo from '../../Videos/DailyWeather.mp4';
 import passGeneratorImg from '../../Images/passGenerator.png';
 import passGeneratorVideo from '../../Videos/passGenerator.mp4';
 import FoodCommerceImg from '../../Images/foodCommerce.png';
@@ -65,8 +65,8 @@ export default function Projects() {
             h1="Daily Weather"
             p="- Daily Weather é uma aplicação web que consome uma API Rest e exibe a condição climática de todas as cidades, bairros estados ou países do mundo. Obtendo tanto os dados da temperatura atual, quanto nível de umidade e a quantidade de nuvens."
             video={WeatherAppVideo}
-            link="https://github.com/valdircaf/Daily-Weather-App"
-            link2="https://www.linkedin.com/posts/valdir-castro10_react-javascript-activity-7036165759001059328-jyUs?utm_source=share&utm_medium=member_desktop"
+            link="https://github.com/valdircaf/DailyWeatherApp"
+            link2="https://www.linkedin.com/posts/valdir-castro10_react-javascript-styledcomponents-activity-7051712449812586496-bezz?utm_source=share&utm_medium=member_desktop"
             link3="https://daily-weather-app.vercel.app/"
             p2="- Este projeto foi desenvolvido com as seguintes tecnologias:"
             p3="&#8226; React &#8226; Styled Components &#8226; Javascript"
