@@ -12,9 +12,9 @@ export default function About() {
         <p ref={ref}>
           Desenvolvedor Frontend com habilidade em React, Javascript, Styled
           Components, Git, consumo de API Rest e PostgreSQL. Apaixonado em
-          componentes reutilizáveis. Cursando Ciências da Computação na FPB e
-          atualmente estudando UI e banco de dados com PostgreSQL por cursos
-          online.
+          componentes reutilizáveis. Cursando Ciências da Computação na FPB -
+          Faculdade Internacional da Paraiba e atualmente estudando UI, Next.js
+          e banco de dados com PostgreSQL por cursos online.
         </p>
       </section>
     </AboutContainer>
