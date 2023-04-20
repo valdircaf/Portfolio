@@ -87,6 +87,9 @@ export default function Projects() {
             <Grid
               active={isActiveCalculator}
               h1="Calculadora"
+              link="https://github.com/valdircaf/Calculator"
+              link2="https://www.linkedin.com/posts/valdir-castro10_javascript-css3-desenvolvimentoweb-activity-7054916234131177472-dqCs?utm_source=share&utm_medium=member_desktop"
+              link3="https://calculator-rust-phi.vercel.app/"
               p="- Calculadora é um projeto antigo, desenvolvido quando estava estudando lógica em Javascript. Resolvi pegar este projeto e refazer o código e layout, tornando-o mais o mais moderno possível. Desenvolvi um layout que simula a workspace de um desktop, com o ícone interativo, que abre e fecha a calculadora."
               p2="- Este projeto foi desenvolvido com as seguintes tecnologias:"
               p3="&#8226; Javascript"
