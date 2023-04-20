@@ -41,8 +41,8 @@ export const AboutContainer = styled.main`
     .bar {
       height: 0.2em;
       width: 7em;
-      background-image: linear-gradient(to right, #8257e6, #9332e5);
       margin: 0.5em 3.5em 3em 0;
+      background-image: linear-gradient(to right, #8257e6, #9332e5);
     }
   }
 

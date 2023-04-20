@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 // eslint-disable-next-line import/prefer-default-export
 export const ProjectsDivContainer = styled.div`
-  width: 12em;
+  width: 10em;
   height: 8em;
   z-index: 1;
   border-bottom: 3px solid #8257e6;
@@ -19,7 +19,7 @@ export const ProjectsDivContainer = styled.div`
     content: '';
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.7);
     position: absolute;
   }
   section {
@@ -53,7 +53,7 @@ export const ProjectsDivContainer = styled.div`
   }
 
   @media screen and (min-width: 1500px) {
-    width: 40em;
+    width: 30em;
     height: 20em;
     transition: all 0.2s;
     section {

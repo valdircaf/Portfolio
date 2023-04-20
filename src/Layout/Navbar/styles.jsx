@@ -12,6 +12,7 @@ export const NavbarContainer = styled.nav`
   padding: 1em;
   font-family: 'Work Sans', sans-serif;
   position: fixed;
+  z-index: 50;
 
   .svg {
     &:hover {
