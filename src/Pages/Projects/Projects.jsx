@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useInView } from 'react-intersection-observer';
-import { FaReact, FaCss3 } from 'react-icons/fa';
+import { FaReact, FaCss3, FaSass } from 'react-icons/fa';
 import { SiStyledcomponents } from 'react-icons/si';
 import { IoLogoJavascript } from 'react-icons/io';
 import { ProjectsContainer } from './styles';
@@ -11,17 +11,24 @@ import DailyWeatherImage from '../../Images/weatherApp.png';
 import CalculatorImage from '../../Images/Calculadora.png';
 import PassGeneratorImage from '../../Images/passGenerator.png';
 import CircleGameImage from '../../Images/circleGame.png';
+import SearchDoorsImage from '../../Images/SearchPhoto.png';
 // Import Videos
 import DailyWeatherVideo from '../../Videos/DailyWeather.mp4';
 import CalculatorVideo from '../../Videos/Calculadora.mp4';
 import PassGeneratorVideo from '../../Videos/passGenerator.mp4';
 import CircleGameVideo from '../../Videos/circleGame.mp4';
+import SearchDoorsVideo from '../../Videos/Search Doors.mp4';
 
 export default function Projects() {
   // Daily Weather
   const [isActiveDaily, setIsActiveDaily] = useState(false);
   const setActiveDaily = () => {
     setIsActiveDaily(!isActiveDaily);
+  };
+
+  const [isActiveSearch, setIsActiveSearch] = useState(false);
+  const setActiveSearch = () => {
+    setIsActiveSearch(!isActiveSearch);
   };
   // Calculator
   const [isActiveCalculator, setIsActiveCalculator] = useState(false);
@@ -74,28 +81,31 @@ export default function Projects() {
               video={DailyWeatherVideo}
             />
           </div>
-          {/* Calculator */}
           {/* eslint-disable-next-line jsx-a11y/no-static-element-interactions */}
-          <div onClick={setActiveCalculator} onKeyDown={setActiveCalculator}>
+          <div onClick={setActiveSearch} onKeyDown={setActiveSearch}>
             <ProjectsDiv
-              img={CalculatorImage}
-              h1="Calculadora"
-              svg={<IoLogoJavascript />}
-              svg2={<FaCss3 />}
-              date="19 de Abril de 2023"
+              img={SearchDoorsImage}
+              h1="Search Doors"
+              svg={<FaReact />}
+              svg2={<FaSass />}
+              date="18 de Maio de 2023"
             />
             <Grid
-              active={isActiveCalculator}
-              h1="Calculadora"
-              link="https://github.com/valdircaf/Calculator"
-              link2="https://www.linkedin.com/posts/valdir-castro10_javascript-css3-desenvolvimentoweb-activity-7054916234131177472-dqCs?utm_source=share&utm_medium=member_desktop"
-              link3="https://calculator-rust-phi.vercel.app/"
-              p="- Calculadora é um projeto antigo, desenvolvido quando estava estudando lógica em Javascript. Resolvi pegar este projeto e refazer o código e layout, tornando-o mais o mais moderno possível. Desenvolvi um layout que simula a workspace de um desktop, com o ícone interativo, que abre e fecha a calculadora."
+              active={isActiveSearch}
+              h1="Search Doors"
+              link="https://github.com/valdircaf/Search-Doors"
+              link2="https://www.linkedin.com/posts/valdir-castro10_ol%C3%A1-h%C3%A1-um-tempo-atr%C3%A1s-na-minha-antiga-empresa-activity-7064984464719790080-0BPk?utm_source=share&utm_medium=member_desktop"
+              link3="https://search-doors.vercel.app/"
+              p="- Há um tempo atrás, na minha antiga empresa, percebi um problema em relação à precificação, onde para precificar um kit de algum produto, tinha que olhar uma tabela de preços e procurar um por um para formar o preço do kit.
+
+              Visto esse problema, com React.js tive a ideia de desenvolver esta página web que o usuário pode pesquisar o preço de algum produto, e ele retorna em carrossel todos os produtos disponíveis."
               p2="- Este projeto foi desenvolvido com as seguintes tecnologias:"
-              p3="&#8226; Javascript"
-              video={CalculatorVideo}
+              p3="&#8226; React &#8226; SASS"
+              video={SearchDoorsVideo}
             />
           </div>
+          {/* Calculator */}
+          {/* eslint-disable-next-line jsx-a11y/no-static-element-interactions */}
         </section>
       </section>
 
